@@ -81,6 +81,27 @@ ECHO Killing Window Manager...
 REM if system on SSD drive - set 0, HDD - 3
 SET Prefetch=0
 
+:: Enable Developer mode
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /v "AllowDevelopmentWithoutDevLicense" /t REG_DWORD /d "1" /f 1>NUL 2>NUL
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /v "AllowAllTrustedApps" /t REG_DWORD /d "1" /f 1>NUL 2>NUL
+
+:: Remove Network from Navigation Pane
+SetACL.exe -silent -on "HKCR\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}" -ot reg -actn setowner -ownr "n:Administrators"
+SetACL.exe -silent -on "HKCR\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}" -ot reg -actn ace -ace "n:Administrators;p:full"
+reg add "HKCR\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}" /v "System.IsPinnedToNameSpaceTree" /t REG_DWORD /d "0" /f 1>NUL 2>NUL
+
+:: Add ".bat" to "New" submenu of Desktop context menu
+reg add "HKLM\Software\Classes\.bat\ShellNew" /v "NullFile" /t REG_SZ /d "1" /f 1>NUL 2>NUL
+reg add "HKLM\Software\Classes\.bat\ShellNew" /v "ItemName" /t REG_EXPAND_SZ /d "@C:\Windows\System32\acppage.dll,-6002" /f 1>NUL 2>NUL
+
+:: Add ".reg" to "New" submenu of Desktop context menu
+reg add "HKLM\Software\Classes\.reg\ShellNew" /v "NullFile" /t REG_SZ /d "" /f 1>NUL 2>NUL
+reg add "HKLM\Software\Classes\.reg\ShellNew" /v "ItemName" /t REG_EXPAND_SZ /d "@C:\WINDOWS\regedit.exe,-309" /f 1>NUL 2>NUL
+
+:: If you have Win10/11 Pro, Win10/11 Enterprise or Win10/11 Pro for Workstations and has the Unbranded Boot features then this will
+:: To suppress all Windows UI elements (logo, status indicator, and status message) during startup
+bcdedit.exe -set {globalsettings} bootuxdisabled on
+
 :: Kill Foreground
 taskkill /F /IM "MicrosoftEdge.exe" 1>NUL 2>NUL
 taskkill /F /IM "explorer.exe" 1>NUL 2>NUL
@@ -883,4 +904,6 @@ goto end
 explorer.exe
 pause
 CLS
+:: Force restart
+shutdown /r /f /t 0
 EXIT
