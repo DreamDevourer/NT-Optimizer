@@ -1,8 +1,6 @@
 # NT Kernel Optimizer
 Post Install Windows Scripts, optimized for NT Kernel 10+
 
-## Personal Post Install Script
-## <a href="http://seregaspb.ru/blog/avtonastrojka-windows-10" target="_blank">Oficial page</a>
 ##### Have any ideas or solutions - you can share!
 
 0. Intro
