@@ -2,7 +2,7 @@
 COLOR 0A
 TITLE "Script Optimizer Kernel NT 10 - NICK 2021"
 CLS
-echo   Lets transform this OS and remove the gabage, Nick!  
+echo   Lets transform this OS and remove the Microsoft garbage, Nick!  
 echo  -------------------------------------------------------
 echo    \
 echo     \
