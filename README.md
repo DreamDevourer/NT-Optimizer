@@ -1,4 +1,4 @@
-# NT Kernel Optimizer
+# NT Kernel Optimizer 👁🦾
 Post Install Windows Scripts, optimized for NT Kernel 10+
 
 ##### Have any ideas or solutions - you can share!
