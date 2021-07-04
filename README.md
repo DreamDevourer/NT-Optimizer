@@ -1,6 +1,8 @@
 # NT Kernel Optimizer 👁🦾
 Post Install Windows Scripts, optimized for NT Kernel 10+
 
+**Be advised: this is a general optimization script and this script can prevent Windows Store, Xbox services (that means you probably can't play MS games) and some internal apps like paint and notepad from working properly.**
+
 ##### Have any ideas or solutions - you can share!
 
 0. Intro
