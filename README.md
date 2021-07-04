@@ -5,7 +5,8 @@ Post Install Windows Scripts, optimized for NT Kernel 10+
 
 0. Intro
 1. List of Optimization
-2. Setps
+2. Bugs
+3. Setps
 
 ### The list of Optimizations
 
