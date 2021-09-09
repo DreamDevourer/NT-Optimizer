@@ -29,7 +29,7 @@ This repository aims to keep my personal Windows 10/11 clean and as fast as poss
 * Block unwanted Web sites to the hosts file
 * Delete Demo content
 * Disable unwanted features
-* Remove OneDrive and other applications
+* Remove some applications
 * Remove 3D objects folder
 * Remove CameraRollLibrary
 * Remove from the menu MyComputer: Music, Pictures, Videos, Desktop folders
@@ -82,6 +82,7 @@ This repository aims to keep my personal Windows 10/11 clean and as fast as poss
 * Prevent from creating LNK files in the Recents folder
 * Remove the Previous Versions tab in file Properties
 * Reloading
+* Windows 11 TPM bypass solution
 
 ### 2. Possible bugs:
 
