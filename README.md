@@ -86,8 +86,9 @@ This repository aims to keep my personal Windows 10/11 clean and as fast as poss
 
 ### 2. Possible bugs:
 
-Skype may not work
-Some Windows Defender and Services won't work in Windows 11
+- Skype may not work
+- Some Windows Defender and Services won't work in Windows 11
+- OneDrive uninstallation stopped working on latest versions of Windows 10 and 11, I will work on a turn around.
 
 ### 3. Setps
 
