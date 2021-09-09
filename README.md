@@ -1,16 +1,22 @@
 # NT Kernel Optimizer 👁🦾
 Post Install Windows Scripts, optimized for NT Kernel 10+
 
+### 0. About
+
+This repository aims to keep my personal Windows 10/11 clean and as fast as possible to run NT applications. Be advised that I use Windows for Workstations and Enterprise most of the time, that means I'm not completely covering Windows Pro and Home Editions. If you don't have access to Workstation or Enterprise edition, please help me to keep this script updated for everyone and also if you just need an easy access Windows, I recommend using Windows 10 Pro K or KN editions to make sure the first install is cleaner than other versions.
+
 **Be advised: this is a general optimization script and this script can prevent Windows Store, Xbox services (that means you probably can't play MS games) and some internal apps like paint and notepad from working properly.**
+
+**For future updates: When Windows 11 officially launches I will stop updating the script for Windows 10 and keep focused on Windows 11, everyone that already has a Windows 10 license will be granted a free update to Windows 11. I know the new Windows 11 requirements are too expensive, but I will make sure to bypass all of them**
 
 ##### Have any ideas or solutions - you can share!
 
-0. Intro
+0. About
 1. List of Optimization
 2. Bugs
 3. Setps
 
-### The list of Optimizations
+### 1. The list of Optimizations
 
 * Disable UAC
 * Privacy functions
@@ -77,12 +83,12 @@ Post Install Windows Scripts, optimized for NT Kernel 10+
 * Remove the Previous Versions tab in file Properties
 * Reloading
 
-### Possible bugs:
+### 2. Possible bugs:
 
 Skype may not work
 Some Windows Defender and Services won't work in Windows 11
 
-### Setps
+### 3. Setps
 
 Run as administrator!
 After the script finishes the process, reboot the system.
