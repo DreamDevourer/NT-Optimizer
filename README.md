@@ -1,5 +1,10 @@
-# NT Kernel Optimizer 👁🦾
-Post Install Windows Scripts, optimized for NT Kernel 10+
+<h1 align="center">NT Kernel Optimizer 🦾</h1>
+
+<p align="center">Post Install Windows Scripts, optimized for NT Kernel 10+</p>
+
+<p align="center">
+  <a href="./LICENSE">License</a>
+</p>
 
 ### 0. About
 
